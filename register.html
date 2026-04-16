@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		background-color: #42f57b;
+		color: #202020;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#main {
+		background-color: #c8c9c7;
+		height: 250px;
+		width: 270px;
+		border: none;
+		border-radius: 12px;
+		padding: 0 20px;
+	}
+
+	#main h1 {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	#main #labelName {
+
+		font-size: 16px;
+	}
+
+	#main #inputName {
+		width: 100%;
+		height: 24px;
+		margin-top: 4px;
+		border: none;
+		border-radius: 4px;
+		padding-left: 5px;
+	}
+
+	#main #Btn {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	#main #Btn #submit-Btn {
+		width: 50%;
+		height: 35px;
+		border: none;
+		border-radius: 5px;
+		background-color: #f91818;
+		color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	#main #Btn #submit-Btn:hover {
+		background-color: #c52929;
+	}
+</style>
+
+<body>
+	<form id="main">
+		<h1>Registration</h1>
+		<label id="labelName">Name:</label><br>
+		<input type="text" id="inputName" class="text-contol" placeholder="Enter your name"><br><br>
+		<div id="Btn"><button type="submit" id="submit-Btn">SUBMIT</button></div>
+		<audio id="audio" src="fhaa.mp3"></audio>
+	</form>
+</body>
+<script>
+	const submitBtn = document.getElementById('submit-Btn');
+	const audio = document.getElementById('audio');
+
+	submitBtn.addEventListener('click', function (event) {
+		event.preventDefault();
+		audio.play();
+	});
+</script>
+
+</html>
